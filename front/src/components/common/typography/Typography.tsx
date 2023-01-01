@@ -30,7 +30,7 @@ export interface ITypography extends ComponentProps<'p'> {
   as?: keyof JSX.IntrinsicElements | JSXElementConstructor<any>
 }
 
-export default function Typography(props: ITypography) {
+export const Typography = (props: ITypography) => {
   const {
     className,
     variant = 'body1',
