@@ -29,9 +29,6 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                   width={24}
                   height={24}
                 />
-                <div className="">
-                  {`${data.author[0].last_name}${data.author[0].first_name}`}
-                </div>
               </div>
             )}
             <div className=" mr-2 md:ml-0">
