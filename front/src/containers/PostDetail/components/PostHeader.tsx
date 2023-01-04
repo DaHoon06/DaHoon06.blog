@@ -18,6 +18,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
       </h1>
       {data.type[0] !== 'Page' && (
         <nav className="mt-7 text-gray-500 dark:text-gray-400">
+          {`${data.author}`}
           <div className="flex items-center gap-4 mb-3">
             {data.author && data.author[0] && (
               <div className="flex items-center gap-2">
