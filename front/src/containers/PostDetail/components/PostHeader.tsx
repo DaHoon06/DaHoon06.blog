@@ -2,7 +2,7 @@ import CONFIG from '@/morethan-log.config'
 import Tag from '@components/Tag'
 import imageLoader from '@/src/libs/next/imageLoader'
 import { TPost } from '@/src/types'
-import {formatDate} from '@/src/libs/utils'
+import { formatDate } from '@/src/libs/utils'
 import Image from 'next/image'
 import React from 'react'
 
@@ -30,7 +30,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                   height={24}
                 />
                 <div className="">
-                  {`${data.author[0].last_name || '전'}${data.author[0].first_name || '다훈'}`}
+                  {`${data.author[0].last_name}${data.author[0].first_name}`}
                 </div>
               </div>
             )}
