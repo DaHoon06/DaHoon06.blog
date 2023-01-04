@@ -18,7 +18,6 @@ const PostHeader: React.FC<Props> = ({ data }) => {
       </h1>
       {data.type[0] !== 'Page' && (
         <nav className="mt-7 text-gray-500 dark:text-gray-400">
-          {`${data.author}`}
           <div className="flex items-center gap-4 mb-3">
             {data.author && data.author[0] && (
               <div className="flex items-center gap-2">
@@ -31,7 +30,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                   height={24}
                 />
                 <div className="">
-                  {`${data.author[0].last_name}${data.author[0].first_name}`}
+                  {`${data.author[0].last_name || '전'}${data.author[0].first_name || '다훈'}`}
                 </div>
               </div>
             )}
