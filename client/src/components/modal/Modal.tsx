@@ -1,6 +1,6 @@
 import React, { ComponentProps, useRef } from 'react'
 import ReactDOM from 'react-dom'
-import styled from 'styled-components'
+import '@/components/modal/Modal.scss'
 
 interface IModal extends ComponentProps<'div'> {
   isOpen: boolean
@@ -8,9 +8,6 @@ interface IModal extends ComponentProps<'div'> {
   layerStyle?: React.CSSProperties
   cardStyle?: React.CSSProperties
 }
-
-const ModalContainer = styled.div``
-const ModalBody = styled.div``
 
 export const Modal = (props: IModal) => {
   const { isOpen, onRequestClose, layerStyle, cardStyle } = props
@@ -27,15 +24,11 @@ export const Modal = (props: IModal) => {
   return (
     isOpen &&
     ReactDOM.createPortal(
-      <ModalContainer
-        className={'modal'}
-        onClick={onClickOutside}
-        style={layerStyle}
-      >
-        <ModalBody className={'modal__body'} ref={el} style={cardStyle}>
+      <article className={'modal'} onClick={onClickOutside} style={layerStyle}>
+        <section className={'modal--body'} ref={el} style={cardStyle}>
           {props.children}
-        </ModalBody>
-      </ModalContainer>,
+        </section>
+      </article>,
       modal
     )
   )
