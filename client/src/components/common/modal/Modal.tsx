@@ -1,6 +1,6 @@
 import React, { ComponentProps, useRef } from 'react'
 import ReactDOM from 'react-dom'
-import '@/components/modal/Modal.scss'
+import '@/components/common/modaln/modal/Modal.scss'
 
 interface IModal extends ComponentProps<'div'> {
   isOpen: boolean

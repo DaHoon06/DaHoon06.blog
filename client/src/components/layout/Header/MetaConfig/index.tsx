@@ -1,4 +1,4 @@
-import CONFIG from 'morethan-log.config'
+import CONFIG from 'blog.config'
 import Head from 'next/head'
 import React from 'react'
 
@@ -14,7 +14,6 @@ const MetaConfig: React.FC<MetaConfigProps> = ({ ...props }) => {
   const meta = {
     ...props,
   }
-
   return (
     <Head>
       <title>{meta.title}</title>
@@ -60,5 +59,4 @@ const MetaConfig: React.FC<MetaConfigProps> = ({ ...props }) => {
     </Head>
   )
 }
-
 export default MetaConfig
