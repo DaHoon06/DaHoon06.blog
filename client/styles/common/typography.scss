@@ -1,4 +1,3 @@
-@import "../../../assets/styles/colors";
 
 @mixin h1 {
   font-size: 32px;
@@ -94,35 +93,32 @@
 }
 
 .gray1 {
-  color: $system_gray01;
+  color: $gray01;
 }
 .gray2 {
-  color: $system_gray02;
+  color: $gray02;
 }
 .gray3 {
-  color: $system_gray03;
+  color: $gray03;
 }
 .gray4 {
-  color: $system_gray04;
+  color: $gray04;
 }
-.gray5 {
-  color: $system_gray05;
-}
-.gray6 {
-  color: $system_gray06;
+.line {
+  color: $gray05;
 }
 .primary {
   color: $primary;
 }
 .red {
-  color: $system_red;
+  color: $red;
 }
 .blue {
-  color: $system_blue;
+  color: $blue;
 }
 .black {
-  color: $system_black;
+  color: $black;
 }
 .white {
-  color: $system_white;
+  color: $white;
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import MetaConfig, {
   MetaConfigProps,
-} from '@/components/layout/Header/MetaConfig'
-import { Header } from '@/components/layout/Header'
+} from '@components/layout/Header/MetaConfig'
+import { Header } from '@components/layout/Header/Header'
 
 type Props = {
   children: React.ReactNode

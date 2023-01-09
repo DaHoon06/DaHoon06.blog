@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  box-shadow: 0 0 3px #000;
+  z-index: 20;
+
+  &__wrapper {
+    display: flex;
+    align-items: center; /* 세로축 정렬 */
+    justify-content: space-between; /* 가로축 정렬 */
+    height: 60px;
+    padding: 0 16px;
+  }
+
+  &__profile {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    background-size: 40px 40px;
+  }
+}

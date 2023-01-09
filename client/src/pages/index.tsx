@@ -1,4 +1,4 @@
-import Layout from '@/components/layout'
+import Layout from '@components/layout'
 import CONFIG from 'blog.config'
 
 export default function Home() {
