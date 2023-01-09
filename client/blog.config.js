@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting
   profile: {
     name: '전다훈',
-    image: '/avatar.svg',  // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: '/src/assets/img/profile.png', // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: 'frontend developer',
     bio: 'I develop everything using node.',
     email: 'dahoon226@gmail.com',
@@ -13,14 +13,14 @@ const CONFIG = {
   projects: [
     {
       name: 'Dotto',
-      href: 'https://www.dotto.site'
-    }
+      href: 'https://www.dotto.site',
+    },
   ],
   // blog setting
   blog: {
     title: 'DaHoon06',
     description: '메모장',
-    theme: 'auto' // ['light', 'dark', 'auto']
+    theme: 'auto', // ['light', 'dark', 'auto']
   },
 
   // CONFIG configration
@@ -41,14 +41,14 @@ const CONFIG = {
   googleAnalytics: {
     enable: false,
     config: {
-      measurementId: '' // ex. G-9N3FE0117Q
-    }
+      measurementId: '', // ex. G-9N3FE0117Q
+    },
   },
   googleSearchConsole: {
     enable: false,
     config: {
-      siteVerification: '' // ex. qvdR1gXMirk_DCUOKPgRnxu2x6fqSPrquYnEZZMjR9w
-    }
+      siteVerification: '', // ex. qvdR1gXMirk_DCUOKPgRnxu2x6fqSPrquYnEZZMjR9w
+    },
   },
   utterances: {
     enable: true,
@@ -56,8 +56,8 @@ const CONFIG = {
       repo: 'morethanmin/morethan-log',
       'issue-term': 'og:title',
       label: '💬 Utterances',
-    }
+    },
   },
-  isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  isProd: process.env.VERCEL_ENV === 'production', // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
 }
 module.exports = CONFIG
