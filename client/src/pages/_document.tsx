@@ -31,21 +31,21 @@ export default function Document() {
         {/*      href="https://fonts.gstatic.com"*/}
         {/*      crossOrigin="anonymous"*/}
         {/*    />*/}
-        {/*    <link*/}
-        {/*      rel="preload"*/}
-        {/*      as="style"*/}
-        {/*      href={`https://fonts.googleapis.com/css2?family=Noto+Sans+${CJK()}:wght@400;500;700&display=swap`}*/}
-        {/*    />*/}
-        {/*    <link*/}
-        {/*      rel="stylesheet"*/}
-        {/*      href={`https://fonts.googleapis.com/css2?family=Noto+Sans+${CJK()}:wght@400;500;700&display=swap`}*/}
-        {/*    />*/}
-        {/*    <noscript>*/}
-        {/*      <link*/}
-        {/*        rel="stylesheet"*/}
-        {/*        href={`https://fonts.googleapis.com/css2?family=Noto+Sans+${CJK()}:wght@400;500;700&display=swap`}*/}
-        {/*      />*/}
-        {/*    </noscript>*/}
+        {/*<link*/}
+        {/*  rel="preload"*/}
+        {/*  as="style"*/}
+        {/*  href={`https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap`}*/}
+        {/*/>*/}
+        {/*<link*/}
+        {/*  rel="stylesheet"*/}
+        {/*  href={`https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap`}*/}
+        {/*/>*/}
+        {/*<noscript>*/}
+        {/*  <link*/}
+        {/*    rel="stylesheet"*/}
+        {/*    href={`https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap`}*/}
+        {/*  />*/}
+        {/*</noscript>*/}
         {/*  </>*/}
         {/*)}*/}
         {/*<link rel="icon" href="/favicon.ico" />*/}
@@ -61,7 +61,7 @@ export default function Document() {
         {/*  href="/feed"*/}
         {/*/>*/}
         {/*/!* theme setting *!/*/}
-        {/*<meta name="theme-color" content={'#f1f3f5'} />*/}
+        <meta name="theme-color" content={'#f1f3f5'} />
 
         {/* google search console */}
         {CONFIG.googleSearchConsole.enable && (

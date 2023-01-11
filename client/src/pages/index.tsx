@@ -1,5 +1,7 @@
 import Layout from '@components/layout'
 import CONFIG from 'blog.config'
+import { PostLists } from '@components/posts/PostLists'
+import { Categories } from '@components/categories/Categories'
 
 export default function Home() {
   return (
@@ -11,7 +13,8 @@ export default function Home() {
         url: CONFIG.link,
       }}
     >
-      test
+      <Categories />
+      <PostLists />
     </Layout>
   )
 }
