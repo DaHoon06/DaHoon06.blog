@@ -1,10 +1,11 @@
 .tag__container {
+  padding: 0.5em 0;
   display: flex;
   width: 100%;
-  
+
   .tag {
     background-color: $background;
-    border: 1px solid $gray04;
+    border: 1px solid $line;
     border-radius: 30px;
     padding: 4px 8px;
     height: fit-content;

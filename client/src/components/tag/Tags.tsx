@@ -3,7 +3,11 @@ import { Typography } from '@components/common/typography/Typography'
 import { useState } from 'react'
 import cn from 'classnames'
 
-export const Tags = () => {
+interface Props {
+  tags?: string[]
+}
+
+export const Tags = (props: Props) => {
   const [tags, setTags] = useState([
     { key: 1, text: 'SEO' },
     { key: 2, text: 'Blog' },

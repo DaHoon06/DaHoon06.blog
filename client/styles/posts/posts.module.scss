@@ -1,17 +1,39 @@
-.post__wrapper {
-  background-color: $white;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 1200px;
-  height: 100%;
-  display: grid;
-  justify-items: start;
-  padding: 1em;
-  box-shadow: 0 0 14px 1px $background;
+.post__container {
+  padding-top: 1rem;
 
-
-  &:hover {
-    cursor: pointer;
-    box-shadow: 0 0 14px 1px $gray04;
+  img {
+    width: 100%;
+    object-fit: cover;
   }
+
+  .post__wrapper {
+    background-color: $white;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: grid;
+    justify-items: start;
+    padding: 1em;
+    box-shadow: 0 0 14px 1px $background;
+    margin-bottom: 1.25em;
+
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 14px 1px $line;
+    }
+
+    .post__label {
+      padding: 0.5em 0;
+    }
+  }
+
+
 }
+
+.post__wrapper__label {
+  width: 100%;
+  padding: 2em;
+}
+
