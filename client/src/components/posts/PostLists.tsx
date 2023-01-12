@@ -2,8 +2,14 @@ import styled from '@styles/posts/posts.module.scss'
 import { Tags } from '@components/tag/Tags'
 import { Typography } from '@components/common/typography/Typography'
 import cn from 'classnames'
+import React from 'react'
 
-export const PostLists = () => {
+type Props = {
+  post: any
+}
+
+export const PostLists: React.FC<Props> = ({ post }) => {
+  console.log(post)
   return (
     <article className={styled.post__container}>
       <section className={styled.post__wrapper}>
