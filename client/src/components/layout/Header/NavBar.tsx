@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { Typography } from '@components/common/typography/Typography'
 
 export const NavBar = () => {
   const [lists, setLists] = useState([{ id: 1, title: 'ABOUT', href: '/' }])
@@ -11,7 +12,11 @@ export const NavBar = () => {
 
           return (
             <li key={id}>
-              <Link href={href}>{title}</Link>
+              <Link href={href}>
+                <Typography fontColor={'gray1'} fontWeight={'medium'}>
+                  {title}
+                </Typography>
+              </Link>
             </li>
           )
         })}

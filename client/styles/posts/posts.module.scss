@@ -2,8 +2,16 @@
   background-color: $white;
   border-radius: 15px;
   width: 100%;
+  max-width: 1200px;
   height: 100%;
   display: grid;
   justify-items: start;
   padding: 1em;
+  box-shadow: 0 0 14px 1px $background;
+
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 14px 1px $gray04;
+  }
 }

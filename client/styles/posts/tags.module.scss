@@ -1,0 +1,11 @@
+.tag__container {
+  display: flex;
+  .tag {
+    background-color: $background;
+    border: 1px solid $gray04;
+    border-radius: 30px;
+    padding: 4px 8px;
+    height: fit-content;
+    width: fit-content;
+  }
+}

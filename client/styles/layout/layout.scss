@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.flex {
+  display: flex;
+}
+
+.flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+$end: 50;
+$start: 1;
+@for $start from 1 to $end {
+  .mt-#{$start} {
+
+  }
+}
