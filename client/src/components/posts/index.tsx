@@ -10,7 +10,7 @@ export const PostContainer = () => {
 
   return (
     <>
-      <section>
+      <section className={styled.post__index}>
         <div
           className={cn(styled.post__wrapper__label, 'flex-justify-between')}
         >

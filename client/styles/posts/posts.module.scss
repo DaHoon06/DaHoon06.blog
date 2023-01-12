@@ -1,3 +1,8 @@
+.post__index {
+  max-width: 900px;
+  width: 100%;
+}
+
 .post__container {
   padding-top: 1rem;
 
@@ -10,14 +15,13 @@
     background-color: $white;
     border-radius: 15px;
     width: 100%;
-    max-width: 1200px;
     height: 100%;
     display: grid;
     justify-items: start;
     padding: 1em;
     box-shadow: 0 0 14px 1px $background;
     margin-bottom: 1.25em;
-
+    min-width: fit-content;
 
     &:hover {
       cursor: pointer;
