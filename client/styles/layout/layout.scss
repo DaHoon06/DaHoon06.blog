@@ -13,6 +13,32 @@ $end: 50;
 $start: 1;
 @for $start from 1 to $end {
   .mt-#{$start} {
-
+    margin-top: $start+px;
   }
+  .mb-#{$start} {
+    margin-bottom: $start+px;
+  }
+  .ml-#{$start} {
+    margin-left: $start+px;
+  }
+  .mr-#{$start} {
+    margin-right: $start+px;
+  }
+
+  .pt-#{$start} {
+    padding-top: $start+px;
+  }
+  .pb-#{$start} {
+    padding-bottom: $start+px;
+  }
+  .pl-#{$start} {
+    padding-left: $start+px;
+  }
+  .pr-#{$start} {
+    padding-right: $start+px;
+  }
+}
+
+.w-100 {
+  width: 100%;
 }

@@ -1,18 +1,23 @@
 import styled from '@styles/posts/tags.module.scss'
 import { Typography } from '@components/common/typography/Typography'
 import { useState } from 'react'
+import cn from 'classnames'
 
 export const Tags = () => {
-  const [tags, setTags] = useState<number[]>([1, 2, 3, 4, 5])
+  const [tags, setTags] = useState([
+    { key: 1, text: 'SEO' },
+    { key: 2, text: 'Blog' },
+    { key: 3, text: 'NextJs' },
+  ])
 
   return (
     <>
       <ul className={styled.tag__container}>
-        {tags.map((value: number, index: number) => {
+        {tags.map((value: { key: number; text: string }, index: number) => {
           return (
-            <li key={index} className={styled.tag}>
+            <li key={index} className={cn(styled.tag, 'mr-4')}>
               <Typography fontColor={'gray2'} variant={'caption'}>
-                {value}
+                {value.text}
               </Typography>
             </li>
           )

@@ -1,5 +1,7 @@
 .tag__container {
   display: flex;
+  width: 100%;
+  
   .tag {
     background-color: $background;
     border: 1px solid $gray04;
