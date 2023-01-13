@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ReactMarkdwon from 'react-markdown'
+import ReactMarkdown from 'react-markdown'
 import style from '@styles/markdown/markdown.module.scss'
 import remarkGfm from 'remark-gfm'
 import styled from 'styled-components'
@@ -9,7 +9,7 @@ interface Props {
   readMd?: any
 }
 
-const markdwon = `
+const markdown = `
   ### 제목 타이틀 (h1)
   
   **굵게**
@@ -80,6 +80,14 @@ function InlineCodeBlock(children: { value: React.ReactNode }) {
 const MarkDown = React.memo(({ ...props }: Props) => {
   const [mdFile, setMdFile] = useState('')
 
+  const source = require('../../../posts/test.md')
+  fetch(source.default)
+    .then((r) => r.text())
+    .then((text) => {
+      console.log(text)
+      setMdFile(text)
+    })
+
   // const mdRead = async () => {
   //   const res = await readMd.readGithubMd()
   //   await setMdFile(res)
@@ -98,9 +106,9 @@ const MarkDown = React.memo(({ ...props }: Props) => {
   return (
     <article className={style.markdown__wrapper}>
       {mdFile}
-      <ReactMarkdwon
+      <ReactMarkdown
         {...props}
-        children={markdwon}
+        children={markdown}
         rehypePlugins={[remarkGfm]}
         components={renderers}
       />

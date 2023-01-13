@@ -10,7 +10,6 @@ type Props = {
 }
 
 export const PostLists: React.FC<Props> = ({ post }) => {
-  console.log(post)
   return (
     <article className={styled.post__container}>
       <MarkDown />
