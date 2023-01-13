@@ -3,6 +3,7 @@ import { Tags } from '@components/tag/Tags'
 import { Typography } from '@components/common/typography/Typography'
 import cn from 'classnames'
 import React from 'react'
+import MarkDown from '@components/markdown/MarkdownRender'
 
 type Props = {
   post: any
@@ -12,6 +13,8 @@ export const PostLists: React.FC<Props> = ({ post }) => {
   console.log(post)
   return (
     <article className={styled.post__container}>
+      <MarkDown />
+
       <section className={styled.post__wrapper}>
         <Typography
           variant={'h1'}
