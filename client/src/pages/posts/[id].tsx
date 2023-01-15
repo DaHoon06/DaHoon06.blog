@@ -17,7 +17,7 @@ const Post = () => {
         title: CONFIG.blog.title,
         description: CONFIG.blog.description,
         type: 'website',
-        url: CONFIG.link,
+        url: CONFIG.homepage,
       }
     }>
     TEST
