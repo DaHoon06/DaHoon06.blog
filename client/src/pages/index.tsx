@@ -10,7 +10,7 @@ export default function Home() {
         title: CONFIG.blog.title,
         description: CONFIG.blog.description,
         type: 'website',
-        url: CONFIG.link,
+        url: CONFIG.homepage,
       }}
     >
       <Profile />

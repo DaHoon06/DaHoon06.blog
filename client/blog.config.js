@@ -21,6 +21,7 @@ const CONFIG = {
     github: 'https://github.com/DaHoon06',
     twitter: 'https://twitter.com/_getters',
   },
+  homepage: 'https://dahoon06-dev.vercel.app/˚',
   // blog setting
   blog: {
     title: 'DaHoon06',
