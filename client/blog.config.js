@@ -64,6 +64,6 @@ const CONFIG = {
       label: '💬 Utterances',
     },
   },
-  isProd: process.env.VERCEL_ENV === 'production', // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  isProd: process.env.VERCEL_ENV === 'production'
 }
 module.exports = CONFIG
