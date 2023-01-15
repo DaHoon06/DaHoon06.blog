@@ -1,8 +1,8 @@
 import React from 'react'
 import MetaConfig, {
   MetaConfigProps,
-} from '@components/layout/Header/MetaConfig'
-import { Header } from '@components/layout/Header/Header'
+} from '@components/layout/header/MetaConfig'
+import { Header } from '@components/layout/header/Header'
 import styled from '@styles/layout/main.module.scss'
 
 type Props = {

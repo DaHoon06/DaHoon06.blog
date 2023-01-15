@@ -9,6 +9,11 @@
   justify-content: space-between;
 }
 
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
 $end: 50;
 $start: 1;
 @for $start from 1 to $end {

@@ -9,10 +9,10 @@ type Props = {
   post: any
 }
 
-export const PostLists: React.FC<Props> = ({ post }) => {
+export const PostLists: React.FC<any> = () => {
   return (
     <article className={styled.post__container}>
-      <MarkDown />
+      {/*<MarkDown />*/}
 
       <section className={styled.post__wrapper}>
         <Typography

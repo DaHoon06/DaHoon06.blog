@@ -80,13 +80,13 @@ function InlineCodeBlock(children: { value: React.ReactNode }) {
 const MarkDown = React.memo(({ ...props }: Props) => {
   const [mdFile, setMdFile] = useState('')
 
-  const source = require('../../../posts/test.md')
-  fetch(source.default)
-    .then((r) => r.text())
-    .then((text) => {
-      console.log(text)
-      setMdFile(text)
-    })
+  // const source = require('../../../posts/test.md')
+  // fetch(source.default)
+  //   .then((r) => r.text())
+  //   .then((text) => {
+  //     console.log(text)
+  //     setMdFile(text)
+  //   })
 
   // const mdRead = async () => {
   //   const res = await readMd.readGithubMd()
@@ -105,7 +105,6 @@ const MarkDown = React.memo(({ ...props }: Props) => {
 
   return (
     <article className={style.markdown__wrapper}>
-      {mdFile}
       <ReactMarkdown
         {...props}
         children={markdown}

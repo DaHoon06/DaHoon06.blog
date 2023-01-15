@@ -1,18 +1,20 @@
 import { PostLists } from '@components/posts/PostLists'
 import { Typography } from '@components/common/typography/Typography'
 import { useState } from 'react'
-import styled from '@styles/posts/posts.module.scss'
+import style from '@styles/posts/posts.module.scss'
 
 import cn from 'classnames'
+import { SearchInput } from "@components/search/SearchInput";
 
 export const PostContainer = () => {
   const [count, setCount] = useState<number>(7)
 
   return (
     <>
-      <section className={styled.post__index}>
+      <section className={style.post__index}>
+        <SearchInput />
         <div
-          className={cn(styled.post__wrapper__label, 'flex-justify-between')}
+          className={cn(style.post__wrapper__label, 'flex-justify-between')}
         >
           <div className={'flex'}>
             <Typography

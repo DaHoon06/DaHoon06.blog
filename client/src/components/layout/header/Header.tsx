@@ -1,5 +1,5 @@
-import { NavBar } from '@components/layout/Header/NavBar'
-import { Logo } from '@components/layout/Header/Logo'
+import { NavBar } from '@components/layout/header/NavBar'
+import { Logo } from '@components/layout/header/Logo'
 import styles from '@styles/layout/header.module.scss'
 
 export const Header = () => {
