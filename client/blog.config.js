@@ -3,7 +3,7 @@ const CONFIG = {
   profile: {
     name: '전다훈',
     image: '/src/assets/img/profile.png',
-    role: 'frontend developer',
+    role: 'Full Stack Developer',
     description: 'I develop everything using node.',
     email: 'dahoon06.dev@gmail.com',
     github: 'dahoon06',
