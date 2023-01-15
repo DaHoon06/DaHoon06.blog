@@ -7,6 +7,7 @@ import PROFILE from '@images/profile.png'
 import GITHUB from '@images/icons/github.svg'
 import TWITTER from '@images/icons/twitter.svg'
 import EMAIL from '@images/icons/email.svg'
+import Link from "next/link";
 
 export const Profile = () => {
   return (
@@ -34,16 +35,20 @@ export const Profile = () => {
 
           <div className={'flex-align-center pb-8'}>
             <Image src={GITHUB} alt={'profile'} width={18} height={18} />
-            <Typography className={'pl-8'} variant={'caption'} fontColor={'black'}>
-              {CONFIG.profile.github}
-            </Typography>
+            <Link href={CONFIG.link.github}>
+              <Typography className={'pl-8'} variant={'caption'} fontColor={'black'}>
+                {CONFIG.profile.github}
+              </Typography>
+            </Link>
           </div>
 
           <div className={'flex-align-center pb-8'}>
             <Image src={TWITTER} alt={'profile'} width={18} height={18} />
-            <Typography className={'pl-8'} variant={'caption'} fontColor={'black'}>
-              {CONFIG.profile.twitter}
-            </Typography>
+            <Link href={CONFIG.link.twitter}>
+              <Typography className={'pl-8'} variant={'caption'} fontColor={'black'}>
+                {CONFIG.profile.twitter}
+              </Typography>
+            </Link>
           </div>
         </section>
       </section>

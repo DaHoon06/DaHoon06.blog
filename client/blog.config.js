@@ -17,6 +17,10 @@ const CONFIG = {
       href: 'https://www.dotto.site',
     },
   ],
+  link: {
+    github: 'https://github.com/DaHoon06',
+    twitter: 'https://twitter.com/_getters',
+  },
   // blog setting
   blog: {
     title: 'DaHoon06',
@@ -26,7 +30,6 @@ const CONFIG = {
   },
 
   // CONFIG configration
-  link: 'https://dahoon06-dev.vercel.app/',
   since: 2023, // If leave this empty, current year will be used.
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: 'https://og-image-korean.vercel.app', // The link to generate OG image, don't end with a slash
