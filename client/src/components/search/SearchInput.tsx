@@ -10,7 +10,7 @@ export const SearchInput = () => {
   }
   return (
     <article className={style.search__container}>
-      <div className={'flex-align-center'}>
+      <div className={'flex-align-center pb-10'}>
         <span className={'pr-4'}>🔎</span>
         <Typography variant={'sub1'} fontColor={'black'} fontWeight={'medium'}>Search</Typography>
       </div>

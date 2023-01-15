@@ -2,13 +2,14 @@ const CONFIG = {
   // profile setting
   profile: {
     name: '전다훈',
-    image: '/src/assets/img/profile.png', // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: '/src/assets/img/profile.png',
     role: 'frontend developer',
-    bio: 'I develop everything using node.',
-    email: 'dahoon226@gmail.com',
+    description: 'I develop everything using node.',
+    email: 'dahoon06.dev@gmail.com',
     github: 'dahoon06',
     linkedin: '',
     instagram: '',
+    twitter: '@_getters',
   },
   projects: [
     {
@@ -21,6 +22,7 @@ const CONFIG = {
     title: 'DaHoon06',
     description: '메모장',
     theme: 'auto', // ['light', 'dark', 'auto']
+    copyright: 'Copy right 2023. dahoon06 All rights reserved'
   },
 
   // CONFIG configration

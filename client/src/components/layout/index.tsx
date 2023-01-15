@@ -4,6 +4,7 @@ import MetaConfig, {
 } from '@components/layout/header/MetaConfig'
 import { Header } from '@components/layout/header/Header'
 import styled from '@styles/layout/main.module.scss'
+import { Footer } from "@components/layout/footer/Footer";
 
 type Props = {
   children: React.ReactNode
@@ -18,6 +19,7 @@ const Layout: React.FC<Props> = (props) => {
       <MetaConfig {...metaConfig} />
       <Header />
       <main className={styled.main__container}>{children}</main>
+      <Footer />
     </div>
   )
 }

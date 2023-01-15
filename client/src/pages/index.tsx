@@ -1,6 +1,6 @@
 import Layout from '@components/layout'
 import CONFIG from 'blog.config'
-import { Categories } from '@components/categories/Categories'
+import { Profile } from '@components/profile/Profile'
 import { PostContainer } from '@components/posts'
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         url: CONFIG.link,
       }}
     >
-      <Categories />
+      <Profile />
       <PostContainer />
     </Layout>
   )

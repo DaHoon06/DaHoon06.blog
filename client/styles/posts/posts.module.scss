@@ -1,6 +1,13 @@
 .post__index {
   max-width: 900px;
   width: 100%;
+  padding-left: 3em;
+}
+
+@media screen and (max-width: 900px) {
+  .post__index {
+    padding-left: 0;
+  }
 }
 
 .post__container {
@@ -38,6 +45,6 @@
 
 .post__wrapper__label {
   width: 100%;
-  padding: 2em;
+  padding: 2em 0;
 }
 
