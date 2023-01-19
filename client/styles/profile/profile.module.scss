@@ -1,3 +1,4 @@
+/* PROFILE COMPONENT */
 .profile__container {
   padding: 1em;
   background-color: $white;
@@ -25,4 +26,18 @@
   .profile__information {
     padding: 1em;
   }
+}
+
+
+/* ABOUT PROFILE */
+
+.my__Profile {
+  background-color: $white;
+  border: 1px solid $line;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 0.8em 1.2em;
+  min-width: 280px;
+
 }

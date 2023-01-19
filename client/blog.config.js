@@ -4,6 +4,7 @@ const CONFIG = {
     name: '전다훈',
     image: '/src/assets/img/profile.png',
     role: 'Full Stack Developer',
+    desc: 'I develop everything using node.',
     description: 'I develop everything using node.',
     email: 'dahoon06.dev@gmail.com',
     github: 'dahoon06',
@@ -27,23 +28,13 @@ const CONFIG = {
     title: 'DaHoon06',
     description: '메모장',
     theme: 'auto', // ['light', 'dark', 'auto']
-    copyright: 'Copy right 2023. dahoon06 All rights reserved'
+    copyright: 'Copy right 2023. dahoon06 All rights reserved',
   },
 
-  // CONFIG configration
-  since: 2023, // If leave this empty, current year will be used.
-  lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: 'https://og-image-korean.vercel.app', // The link to generate OG image, don't end with a slash
   seo: {
     keywords: ['Blog', 'Website', 'Notion'],
   },
-
-  // notion configuration
-  notionConfig: {
-    pageId: process.env.NOTION_PAGE_ID,
-  },
-
-  // plugin configuration
   googleAnalytics: {
     enable: false,
     config: {
@@ -64,6 +55,6 @@ const CONFIG = {
       label: '💬 Utterances',
     },
   },
-  isProd: process.env.VERCEL_ENV === 'production'
+  isProd: process.env.VERCEL_ENV === 'production',
 }
 module.exports = CONFIG
