@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "typeRoots": ["./node_modules/@types", "./types"],
     "incremental": true,
     "baseUrl": ".",
     "paths": {
@@ -22,6 +22,7 @@
       "@components/*": ["src/components/*"],
       "@images/*": ["src/assets/img/*"],
       "@lib/*": ["src/lib/*"],
+      "posting/*": ["../posts/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
